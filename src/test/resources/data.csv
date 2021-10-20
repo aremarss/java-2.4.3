@@ -1,0 +1,9 @@
+test,amount,registered,expected
+"registered user, bonus not limit",3300,true,0,
+"registered user, bonus on down limit",3400,true,1,
+"registered user, bonus under limit",100060,true,30,
+"registered user, bonus over limit",100000060,true,500,
+"not registered user, bonus not limit",9900,false,0,
+"not registered user, bonus on down limit",10000,false,1,
+"not registered user, bonus under limit",100060,false,10,
+"not registered user, bonus under limit",100000060,false,500
